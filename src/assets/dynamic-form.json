@@ -1,0 +1,32 @@
+{
+    "title": "Angular Form",
+    "type": "object",
+    "properties": {
+      "firstname": {
+        "type": "string",
+        "title": "Firstname"
+      },
+      "nationId": {
+        "type": "number",
+        "title": "Nation",
+        "widget": {
+          "formlyConfig": {
+            "type": "select",
+            "templateOptions": {
+              "options": [
+                {
+                  "value": null,
+                  "label": "--"
+                },
+                {
+                  "value": 1,
+                  "label": "Italy"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "required": ["firstname"]
+  }
